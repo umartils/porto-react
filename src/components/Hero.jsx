@@ -74,8 +74,8 @@ export default function Hero({ loading }) {
           }`}
         />
         {/* Badge */}
-        <div className="flex items-center mb-6 bg-zinc-800 w-fit p-4 rounded-2xl border border-zinc-700">
-          <span className="text-violet-300 font-medium">
+        <div className="flex items-center mb-6 bg-zinc-800 md:w-fit w-1/2 p-4 rounded-2xl border border-zinc-700">
+          <span className="text-violet-300 font-medium text-center">
             Fullstack Developer & AI/ML Engineer
           </span>
         </div>
