@@ -4,20 +4,20 @@ function Projects() {
   return (
     <div className="projects mt-32 py-10" id="projects">
       <h1
-        className="text-center text-4xl/snug font-bold mb-3"
+        className="text-center text-4xl/snug font-bold mb-15"
         data-aos="fade-down"
         data-aos-duration="1000"
       >
         Projects
       </h1>
-      <p
+      {/* <p
         className="text-center opacity-60 mb-14"
         data-aos="fade-down"
         data-aos-duration="1000"
         data-aos-delay="100"
       >
         Kumpulan proyek yang telah saya kerjakan
-      </p>
+      </p> */}
       <div
         className="projects-box grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5"
         data-aos="fade-up"
