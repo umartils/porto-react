@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/react-in-jsx-scope */
 import DataImage from '../data';
 
@@ -10,14 +11,18 @@ const socialLinks = [
   },
 ];
 
-export default function Hero() {
+export default function Hero({ loading }) {
   return (
     <div
       id="home"
       className="hero grid grid-cols-1 md:grid-cols-2 items-center pt-15 gap-6 xl:gap-0"
     >
       {/* LEFT CONTENT */}
-      <div className="order-2 md:order-1animate__animated animate__fadeInLeft animate__delay-3s">
+      <div
+        className={`order-2 md:order-1 ${
+          !loading ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
+        } transition-all duration-500`}
+      >
         {/* Heading */}
         <h1 className="text-5xl/tight font-bold mb-10">
           Halo, Saya <span className="text-violet-400">Umar Tilmisani</span>
@@ -64,7 +69,9 @@ export default function Hero() {
           src={DataImage.HeroImage}
           alt="Hero"
           loading="lazy"
-          className="md:mb-8 mb-5 relative w-72 md:w-96 rounded-full object-cover ring-4 ring-violet-500/40 shadow-2xl animate__animated animate__fadeInRight animate__delay-3s transition duration-500 ease-in-out hover:scale-105 hover:ring-violet-400 hover:shadow-violet-500/30"
+          className={`md:mb-8 mb-5 relative w-72 md:w-96 rounded-full object-cover ring-4 ring-violet-500/40 shadow-2xl transition duration-500 ease-in-out hover:scale-105 hover:ring-violet-400 hover:shadow-violet-500/30 ${
+            !loading ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
+          }`}
         />
         {/* Badge */}
         <div className="flex items-center mb-6 bg-zinc-800 w-fit p-4 rounded-2xl border border-zinc-700">

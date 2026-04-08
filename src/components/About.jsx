@@ -24,11 +24,14 @@ export default function About() {
           className="w-12 rounded-md mb-8 sm:hidden"
         />
         <p className="text-base/loose mb-10 opacity-85">
-          Hi, perkenalkan saya Umar Tilmisani, seorang Full Stack Web Developer
-          dan AI/ML Engineer, Saya percaya bahwa desain dan fungsionalitas harus
-          berjalan beriringan, sehingga setiap proyek yang saya kembangkan tidak
-          hanya terlihat menarik tetapi juga memberikan pengalaman pengguna yang
-          optimal.
+          Halo, perkenalkan saya Umar Tilmisani, seorang fresh graduate Teknik
+          Komputer yang memiliki minat besar di bidang IT, khususnya
+          pengembangan software, perangkat hardware, serta AI/Machine Learning.
+          Saya telah mengerjakan lebih dari 20 proyek yang mencakup berbagai
+          bidang tersebut, mulai dari pengembangan aplikasi hingga sistem
+          berbasis perangkat keras. Saya berfokus pada membangun solusi yang
+          tidak hanya fungsional, tetapi juga efisien dan memberikan dampak
+          nyata.
         </p>
         <div className="flex items-center justify-between">
           <img
